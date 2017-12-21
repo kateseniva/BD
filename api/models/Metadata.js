@@ -9,9 +9,21 @@ module.exports = {
 
   attributes: {
     conceptions: { type: 'array' },
-    subjects: { type: 'array' },
+    subjects: {
+      collection: 'subject',
+      via: 'metadata'
+    },
+
     controlObjects: { type: 'array' },
-    dataSets : { type: 'array' },
-    dataObjects: { type: 'array' }
+
+    dataSets : {
+      collection: 'dataSet',
+      via: 'metadata'
+    },
+
+    dataObjects: {
+      collection: 'dataObject',
+      via: 'metadata'
+    }
   }
 };
