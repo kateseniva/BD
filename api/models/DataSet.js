@@ -24,6 +24,8 @@ module.exports = {
       required: true
     },
 
-    metadataId: { type: 'string' }
+    metadata: {
+      model: 'metadata'
+    }
   }
 };
