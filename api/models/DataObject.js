@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    metadataId: { type: 'string' },
+    metadata: { model: 'metadata' },
 
     name : { type: 'string' },
 
