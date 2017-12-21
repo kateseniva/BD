@@ -9,7 +9,9 @@ module.exports = {
 
   attributes: {
 
-    subjectId: { type: 'string' },
+    subject: {
+      model: 'subject'
+    },
 
     metadataId: { type: 'string' },
 
