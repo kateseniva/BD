@@ -16,8 +16,11 @@ module.exports = {
 
     dataSetId: { type: 'string' },
 
-    metadataId: { type: 'string' },
+    metadata: { model: 'metadata' },
 
-    conceptions: { type: 'array' }
+    conceptions: {
+      collection: 'conception',
+      via: 'subject'
+    }
   }
 };
